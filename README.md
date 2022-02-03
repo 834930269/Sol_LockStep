@@ -1,0 +1,2 @@
+# Sol_LockStep
+学习帧同步用,暂时计划TCP部分使用DotNetty和Actor模型
