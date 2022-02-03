@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "dgSpecHash": "JWfapcNv/e5qm7IwqlUm5ZIo28mE1Zvf+Ey+kV0h0FEZ/EOQFy5o0YP9XBocaPTNC07wGTIPNJ2y1OrGqc82CQ==",
+  "success": true,
+  "projectFilePath": "C:\\G\\GithubRepo\\Sol_LockStep\\SL_Server\\SL_Server.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\LENOVO\\.nuget\\packages\\dotnetty.buffers\\0.7.0\\dotnetty.buffers.0.7.0.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\dotnetty.codecs\\0.7.0\\dotnetty.codecs.0.7.0.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\dotnetty.common\\0.7.1\\dotnetty.common.0.7.1.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\dotnetty.handlers\\0.7.0\\dotnetty.handlers.0.7.0.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\dotnetty.transport\\0.7.0\\dotnetty.transport.0.7.0.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\google.protobuf\\3.19.4\\google.protobuf.3.19.4.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.0\\microsoft.extensions.dependencyinjection.5.0.0.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.extensions.logging\\5.0.0\\microsoft.extensions.logging.5.0.0.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\system.collections.immutable\\1.5.0\\system.collections.immutable.1.5.0.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.0\\system.diagnostics.diagnosticsource.5.0.0.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
