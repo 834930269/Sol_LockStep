@@ -1,0 +1,18 @@
+syntax = "proto3";
+import "Vector.proto";
+package PlayerMsg;
+
+message Msg_PlayerInput{
+    Vector.SVector2 mousePos = 1;
+    Vector.SVector2 inputUV = 2;
+    bool isInputFire=3;
+    int32 skillId = 4;
+    bool isSpeedUp = 5;
+    int32 tick = 6;
+}
+
+message Msg_FrameInput{
+    int32 tick =1;
+    repeated Msg_PlayerInput inputs = 2;
+}
+

@@ -1,0 +1,31 @@
+syntax="proto3";
+import "Vector.proto";
+package RoomMsg;
+
+message Msg_JoinRoom{
+    string name = 1;
+}
+
+message Msg_QuitRoom{
+    int32 val = 1;
+}
+
+message Msg_StartGame{
+    int32 mapId = 1;
+    int32 localPlayerId = 2;
+    repeated Msg_PlayerServerInfo playerInfos = 3;
+}
+
+message Msg_HashCode{
+    int32 tick = 1;
+    int32 hash = 2;
+}
+
+message Msg_PlayerServerInfo{
+    Vector.SVector3 initPos = 1;
+    string name = 2;
+    int32 Id = 3;
+    int32 localId = 4;
+    float initDeg = 5;
+    int32 PrefabId = 6; 
+}

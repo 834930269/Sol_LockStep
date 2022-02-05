@@ -1,0 +1,13 @@
+syntax = "proto3";
+package Vector;
+
+message SVector2{
+    float x = 1;
+    float y = 2;
+}
+
+message SVector3{
+    float x = 1;
+    float y = 2;
+    float z = 3;
+}

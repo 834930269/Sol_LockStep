@@ -1,0 +1,17 @@
+syntax = "proto3";
+package OpCode;
+
+enum ProtoCode{
+    //加入房间
+    S_JoinRoom = 0;
+    //离开房间
+    S_QuitRoom = 1;
+    //开始游戏
+    S_StartGame = 2;
+    //用户输入提交
+    S_PlayerInput = 3;
+    //帧输入(?)
+    S_FrameInput = 4;
+    //帧校验哈希
+    S_HashCode = 5;
+}
