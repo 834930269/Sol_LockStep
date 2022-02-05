@@ -54,8 +54,8 @@ public class InputMono : MonoSingleton<InputMono>
 
             GameLaunch.CurGameInput = new Msg_PlayerInput();
             Msg_PlayerInput pi = GameLaunch.CurGameInput;
-            pi.MousePos.X = mousePos.x; pi.MousePos.Y = mousePos.y;
-            pi.InputUV.X = inputUV.x; pi.InputUV.Y = inputUV.y;
+            pi.MousePosX = mousePos.x; pi.MousePosY = mousePos.y;
+            pi.InputUVX = inputUV.x; pi.InputUVY = inputUV.y;
             pi.IsInputFire = isInputFire;
             pi.SkillId = skillId;
             pi.IsSpeedUp = isSpeedUp;

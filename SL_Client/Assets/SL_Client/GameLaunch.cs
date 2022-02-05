@@ -1,3 +1,4 @@
+using Google.Protobuf;
 using PlayerMsg;
 using RoomMsg;
 using System;
@@ -5,8 +6,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameLaunch : MonoSingleton<GameLaunch>
+public class GameLaunch : MonoBehaviour
 {
+    public static GameLaunch Instance;
     public static Msg_PlayerInput CurGameInput = new Msg_PlayerInput();
 
     [Header("服务端IP")]
@@ -43,7 +45,6 @@ public class GameLaunch : MonoSingleton<GameLaunch>
     //[Header("游戏数据")] public static List<Player> allPlayers = new List<Player>();
 
     [HideInInspector] public float remainTime; //Update的延时
-    private TCPClient tcpClient;
 
     private void Awake()
     {
@@ -64,6 +65,7 @@ public class GameLaunch : MonoSingleton<GameLaunch>
         }
         */
         DontDestroyOnLoad(this);
+        Instance = this;
         gameObject.AddComponent<PingMono>();
         gameObject.AddComponent<InputMono>();
 
@@ -85,10 +87,13 @@ public class GameLaunch : MonoSingleton<GameLaunch>
         if(!IsReplay && !IsClientMode)
         {
             //正常开启游戏
-            tcpClient = new TCPClient();
-            tcpClient.Connect(hostAddr, hostPort);
-            //TODO: 发送加入房间的消息
-
+            TCPManager.Instance.Connect(hostAddr,hostPort,()=> {
+                _hasStart = true;
+                //加入成功
+                //Msg_JoinRoom mj = new Msg_JoinRoom() { Name = Application.dataPath };
+                //TODO: 发送加入房间的消息
+                //TCPManager.Instance.Send((int)OpCode.ProtoCode.SJoinRoom, mj.ToByteArray());
+            });
         }
         else
         {

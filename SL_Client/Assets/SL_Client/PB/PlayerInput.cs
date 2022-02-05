@@ -24,17 +24,17 @@ namespace PlayerMsg {
     static PlayerInputReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChFQbGF5ZXJJbnB1dC5wcm90bxIJUGxheWVyTXNnGgxWZWN0b3IucHJvdG8i",
-            "nwEKD01zZ19QbGF5ZXJJbnB1dBIiCghtb3VzZVBvcxgBIAEoCzIQLlZlY3Rv",
-            "ci5TVmVjdG9yMhIhCgdpbnB1dFVWGAIgASgLMhAuVmVjdG9yLlNWZWN0b3Iy",
-            "EhMKC2lzSW5wdXRGaXJlGAMgASgIEg8KB3NraWxsSWQYBCABKAUSEQoJaXNT",
-            "cGVlZFVwGAUgASgIEgwKBHRpY2sYBiABKAUiSgoOTXNnX0ZyYW1lSW5wdXQS",
-            "DAoEdGljaxgBIAEoBRIqCgZpbnB1dHMYAiADKAsyGi5QbGF5ZXJNc2cuTXNn",
-            "X1BsYXllcklucHV0YgZwcm90bzM="));
+            "ChFQbGF5ZXJJbnB1dC5wcm90bxIJUGxheWVyTXNnIqIBCg9Nc2dfUGxheWVy",
+            "SW5wdXQSEQoJbW91c2VQb3NYGAEgASgCEhEKCW1vdXNlUG9zWRgCIAEoAhIQ",
+            "CghpbnB1dFVWWBgDIAEoAhIQCghpbnB1dFVWWRgEIAEoAhITCgtpc0lucHV0",
+            "RmlyZRgFIAEoCBIPCgdza2lsbElkGAYgASgFEhEKCWlzU3BlZWRVcBgHIAEo",
+            "CBIMCgR0aWNrGAggASgFIkoKDk1zZ19GcmFtZUlucHV0EgwKBHRpY2sYASAB",
+            "KAUSKgoGaW5wdXRzGAIgAygLMhouUGxheWVyTXNnLk1zZ19QbGF5ZXJJbnB1",
+            "dGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Vector.VectorReflection.Descriptor, },
+          new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::PlayerMsg.Msg_PlayerInput), global::PlayerMsg.Msg_PlayerInput.Parser, new[]{ "MousePos", "InputUV", "IsInputFire", "SkillId", "IsSpeedUp", "Tick" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::PlayerMsg.Msg_PlayerInput), global::PlayerMsg.Msg_PlayerInput.Parser, new[]{ "MousePosX", "MousePosY", "InputUVX", "InputUVY", "IsInputFire", "SkillId", "IsSpeedUp", "Tick" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PlayerMsg.Msg_FrameInput), global::PlayerMsg.Msg_FrameInput.Parser, new[]{ "Tick", "Inputs" }, null, null, null, null)
           }));
     }
@@ -76,8 +76,10 @@ namespace PlayerMsg {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Msg_PlayerInput(Msg_PlayerInput other) : this() {
-      mousePos_ = other.mousePos_ != null ? other.mousePos_.Clone() : null;
-      inputUV_ = other.inputUV_ != null ? other.inputUV_.Clone() : null;
+      mousePosX_ = other.mousePosX_;
+      mousePosY_ = other.mousePosY_;
+      inputUVX_ = other.inputUVX_;
+      inputUVY_ = other.inputUVY_;
       isInputFire_ = other.isInputFire_;
       skillId_ = other.skillId_;
       isSpeedUp_ = other.isSpeedUp_;
@@ -91,32 +93,56 @@ namespace PlayerMsg {
       return new Msg_PlayerInput(this);
     }
 
-    /// <summary>Field number for the "mousePos" field.</summary>
-    public const int MousePosFieldNumber = 1;
-    private global::Vector.SVector2 mousePos_;
+    /// <summary>Field number for the "mousePosX" field.</summary>
+    public const int MousePosXFieldNumber = 1;
+    private float mousePosX_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Vector.SVector2 MousePos {
-      get { return mousePos_; }
+    public float MousePosX {
+      get { return mousePosX_; }
       set {
-        mousePos_ = value;
+        mousePosX_ = value;
       }
     }
 
-    /// <summary>Field number for the "inputUV" field.</summary>
-    public const int InputUVFieldNumber = 2;
-    private global::Vector.SVector2 inputUV_;
+    /// <summary>Field number for the "mousePosY" field.</summary>
+    public const int MousePosYFieldNumber = 2;
+    private float mousePosY_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Vector.SVector2 InputUV {
-      get { return inputUV_; }
+    public float MousePosY {
+      get { return mousePosY_; }
       set {
-        inputUV_ = value;
+        mousePosY_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "inputUVX" field.</summary>
+    public const int InputUVXFieldNumber = 3;
+    private float inputUVX_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public float InputUVX {
+      get { return inputUVX_; }
+      set {
+        inputUVX_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "inputUVY" field.</summary>
+    public const int InputUVYFieldNumber = 4;
+    private float inputUVY_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public float InputUVY {
+      get { return inputUVY_; }
+      set {
+        inputUVY_ = value;
       }
     }
 
     /// <summary>Field number for the "isInputFire" field.</summary>
-    public const int IsInputFireFieldNumber = 3;
+    public const int IsInputFireFieldNumber = 5;
     private bool isInputFire_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -128,7 +154,7 @@ namespace PlayerMsg {
     }
 
     /// <summary>Field number for the "skillId" field.</summary>
-    public const int SkillIdFieldNumber = 4;
+    public const int SkillIdFieldNumber = 6;
     private int skillId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -140,7 +166,7 @@ namespace PlayerMsg {
     }
 
     /// <summary>Field number for the "isSpeedUp" field.</summary>
-    public const int IsSpeedUpFieldNumber = 5;
+    public const int IsSpeedUpFieldNumber = 7;
     private bool isSpeedUp_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -152,7 +178,7 @@ namespace PlayerMsg {
     }
 
     /// <summary>Field number for the "tick" field.</summary>
-    public const int TickFieldNumber = 6;
+    public const int TickFieldNumber = 8;
     private int tick_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -178,8 +204,10 @@ namespace PlayerMsg {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (!object.Equals(MousePos, other.MousePos)) return false;
-      if (!object.Equals(InputUV, other.InputUV)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(MousePosX, other.MousePosX)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(MousePosY, other.MousePosY)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(InputUVX, other.InputUVX)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(InputUVY, other.InputUVY)) return false;
       if (IsInputFire != other.IsInputFire) return false;
       if (SkillId != other.SkillId) return false;
       if (IsSpeedUp != other.IsSpeedUp) return false;
@@ -191,8 +219,10 @@ namespace PlayerMsg {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (mousePos_ != null) hash ^= MousePos.GetHashCode();
-      if (inputUV_ != null) hash ^= InputUV.GetHashCode();
+      if (MousePosX != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(MousePosX);
+      if (MousePosY != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(MousePosY);
+      if (InputUVX != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(InputUVX);
+      if (InputUVY != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(InputUVY);
       if (IsInputFire != false) hash ^= IsInputFire.GetHashCode();
       if (SkillId != 0) hash ^= SkillId.GetHashCode();
       if (IsSpeedUp != false) hash ^= IsSpeedUp.GetHashCode();
@@ -215,28 +245,36 @@ namespace PlayerMsg {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (mousePos_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(MousePos);
+      if (MousePosX != 0F) {
+        output.WriteRawTag(13);
+        output.WriteFloat(MousePosX);
       }
-      if (inputUV_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(InputUV);
+      if (MousePosY != 0F) {
+        output.WriteRawTag(21);
+        output.WriteFloat(MousePosY);
+      }
+      if (InputUVX != 0F) {
+        output.WriteRawTag(29);
+        output.WriteFloat(InputUVX);
+      }
+      if (InputUVY != 0F) {
+        output.WriteRawTag(37);
+        output.WriteFloat(InputUVY);
       }
       if (IsInputFire != false) {
-        output.WriteRawTag(24);
+        output.WriteRawTag(40);
         output.WriteBool(IsInputFire);
       }
       if (SkillId != 0) {
-        output.WriteRawTag(32);
+        output.WriteRawTag(48);
         output.WriteInt32(SkillId);
       }
       if (IsSpeedUp != false) {
-        output.WriteRawTag(40);
+        output.WriteRawTag(56);
         output.WriteBool(IsSpeedUp);
       }
       if (Tick != 0) {
-        output.WriteRawTag(48);
+        output.WriteRawTag(64);
         output.WriteInt32(Tick);
       }
       if (_unknownFields != null) {
@@ -249,28 +287,36 @@ namespace PlayerMsg {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (mousePos_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(MousePos);
+      if (MousePosX != 0F) {
+        output.WriteRawTag(13);
+        output.WriteFloat(MousePosX);
       }
-      if (inputUV_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(InputUV);
+      if (MousePosY != 0F) {
+        output.WriteRawTag(21);
+        output.WriteFloat(MousePosY);
+      }
+      if (InputUVX != 0F) {
+        output.WriteRawTag(29);
+        output.WriteFloat(InputUVX);
+      }
+      if (InputUVY != 0F) {
+        output.WriteRawTag(37);
+        output.WriteFloat(InputUVY);
       }
       if (IsInputFire != false) {
-        output.WriteRawTag(24);
+        output.WriteRawTag(40);
         output.WriteBool(IsInputFire);
       }
       if (SkillId != 0) {
-        output.WriteRawTag(32);
+        output.WriteRawTag(48);
         output.WriteInt32(SkillId);
       }
       if (IsSpeedUp != false) {
-        output.WriteRawTag(40);
+        output.WriteRawTag(56);
         output.WriteBool(IsSpeedUp);
       }
       if (Tick != 0) {
-        output.WriteRawTag(48);
+        output.WriteRawTag(64);
         output.WriteInt32(Tick);
       }
       if (_unknownFields != null) {
@@ -283,11 +329,17 @@ namespace PlayerMsg {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (mousePos_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(MousePos);
+      if (MousePosX != 0F) {
+        size += 1 + 4;
       }
-      if (inputUV_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(InputUV);
+      if (MousePosY != 0F) {
+        size += 1 + 4;
+      }
+      if (InputUVX != 0F) {
+        size += 1 + 4;
+      }
+      if (InputUVY != 0F) {
+        size += 1 + 4;
       }
       if (IsInputFire != false) {
         size += 1 + 1;
@@ -313,17 +365,17 @@ namespace PlayerMsg {
       if (other == null) {
         return;
       }
-      if (other.mousePos_ != null) {
-        if (mousePos_ == null) {
-          MousePos = new global::Vector.SVector2();
-        }
-        MousePos.MergeFrom(other.MousePos);
+      if (other.MousePosX != 0F) {
+        MousePosX = other.MousePosX;
       }
-      if (other.inputUV_ != null) {
-        if (inputUV_ == null) {
-          InputUV = new global::Vector.SVector2();
-        }
-        InputUV.MergeFrom(other.InputUV);
+      if (other.MousePosY != 0F) {
+        MousePosY = other.MousePosY;
+      }
+      if (other.InputUVX != 0F) {
+        InputUVX = other.InputUVX;
+      }
+      if (other.InputUVY != 0F) {
+        InputUVY = other.InputUVY;
       }
       if (other.IsInputFire != false) {
         IsInputFire = other.IsInputFire;
@@ -352,33 +404,35 @@ namespace PlayerMsg {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 10: {
-            if (mousePos_ == null) {
-              MousePos = new global::Vector.SVector2();
-            }
-            input.ReadMessage(MousePos);
+          case 13: {
+            MousePosX = input.ReadFloat();
             break;
           }
-          case 18: {
-            if (inputUV_ == null) {
-              InputUV = new global::Vector.SVector2();
-            }
-            input.ReadMessage(InputUV);
+          case 21: {
+            MousePosY = input.ReadFloat();
             break;
           }
-          case 24: {
-            IsInputFire = input.ReadBool();
+          case 29: {
+            InputUVX = input.ReadFloat();
             break;
           }
-          case 32: {
-            SkillId = input.ReadInt32();
+          case 37: {
+            InputUVY = input.ReadFloat();
             break;
           }
           case 40: {
-            IsSpeedUp = input.ReadBool();
+            IsInputFire = input.ReadBool();
             break;
           }
           case 48: {
+            SkillId = input.ReadInt32();
+            break;
+          }
+          case 56: {
+            IsSpeedUp = input.ReadBool();
+            break;
+          }
+          case 64: {
             Tick = input.ReadInt32();
             break;
           }
@@ -397,33 +451,35 @@ namespace PlayerMsg {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
-          case 10: {
-            if (mousePos_ == null) {
-              MousePos = new global::Vector.SVector2();
-            }
-            input.ReadMessage(MousePos);
+          case 13: {
+            MousePosX = input.ReadFloat();
             break;
           }
-          case 18: {
-            if (inputUV_ == null) {
-              InputUV = new global::Vector.SVector2();
-            }
-            input.ReadMessage(InputUV);
+          case 21: {
+            MousePosY = input.ReadFloat();
             break;
           }
-          case 24: {
-            IsInputFire = input.ReadBool();
+          case 29: {
+            InputUVX = input.ReadFloat();
             break;
           }
-          case 32: {
-            SkillId = input.ReadInt32();
+          case 37: {
+            InputUVY = input.ReadFloat();
             break;
           }
           case 40: {
-            IsSpeedUp = input.ReadBool();
+            IsInputFire = input.ReadBool();
             break;
           }
           case 48: {
+            SkillId = input.ReadInt32();
+            break;
+          }
+          case 56: {
+            IsSpeedUp = input.ReadBool();
+            break;
+          }
+          case 64: {
             Tick = input.ReadInt32();
             break;
           }

@@ -1,14 +1,15 @@
 syntax = "proto3";
-import "Vector.proto";
 package PlayerMsg;
 
 message Msg_PlayerInput{
-    Vector.SVector2 mousePos = 1;
-    Vector.SVector2 inputUV = 2;
-    bool isInputFire=3;
-    int32 skillId = 4;
-    bool isSpeedUp = 5;
-    int32 tick = 6;
+    float mousePosX = 1;
+    float mousePosY = 2;
+    float inputUVX = 3;
+    float inputUVY = 4;
+    bool isInputFire=5;
+    int32 skillId = 6;
+    bool isSpeedUp = 7;
+    int32 tick = 8;
 }
 
 message Msg_FrameInput{

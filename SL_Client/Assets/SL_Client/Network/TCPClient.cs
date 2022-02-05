@@ -398,21 +398,17 @@ public class TCPClient
     }
 
     /// <summary>
-    /// 主线程主动取走队列中的所有网络包
+    /// TCPManager主动取走队列中的所有网络包
     /// </summary>
     /// <returns></returns>
-    public List<NetPacket> GetPackets()
+    public void GetPackets(List<NetPacket> packets)
     {
-        List<NetPacket> packetList = new List<NetPacket>();
-
         NetPacket one = packetQueue.Dequeue();
         while (one != null)
         {
-            packetList.Add(one);
+            packets.Add(one);
             one = packetQueue.Dequeue();
         }
-
-        return packetList;
     }
 
 

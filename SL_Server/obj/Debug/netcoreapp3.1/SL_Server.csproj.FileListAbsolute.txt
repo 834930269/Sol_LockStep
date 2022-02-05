@@ -1,7 +1,3 @@
-C:\G\GithubRepo\Sol_LockStep\SL_Server\obj\Debug\netcoreapp3.1\SL_Server.csproj.AssemblyReference.cache
-C:\G\GithubRepo\Sol_LockStep\SL_Server\obj\Debug\netcoreapp3.1\SL_Server.AssemblyInfoInputs.cache
-C:\G\GithubRepo\Sol_LockStep\SL_Server\obj\Debug\netcoreapp3.1\SL_Server.AssemblyInfo.cs
-C:\G\GithubRepo\Sol_LockStep\SL_Server\obj\Debug\netcoreapp3.1\SL_Server.csproj.CoreCompileInputs.cache
 C:\G\GithubRepo\Sol_LockStep\SL_Server\bin\Debug\netcoreapp3.1\SL_Server.exe
 C:\G\GithubRepo\Sol_LockStep\SL_Server\bin\Debug\netcoreapp3.1\SL_Server.deps.json
 C:\G\GithubRepo\Sol_LockStep\SL_Server\bin\Debug\netcoreapp3.1\SL_Server.runtimeconfig.json
@@ -22,6 +18,10 @@ C:\G\GithubRepo\Sol_LockStep\SL_Server\bin\Debug\netcoreapp3.1\Microsoft.Extensi
 C:\G\GithubRepo\Sol_LockStep\SL_Server\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
 C:\G\GithubRepo\Sol_LockStep\SL_Server\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
 C:\G\GithubRepo\Sol_LockStep\SL_Server\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+C:\G\GithubRepo\Sol_LockStep\SL_Server\obj\Debug\netcoreapp3.1\SL_Server.csproj.AssemblyReference.cache
+C:\G\GithubRepo\Sol_LockStep\SL_Server\obj\Debug\netcoreapp3.1\SL_Server.AssemblyInfoInputs.cache
+C:\G\GithubRepo\Sol_LockStep\SL_Server\obj\Debug\netcoreapp3.1\SL_Server.AssemblyInfo.cs
+C:\G\GithubRepo\Sol_LockStep\SL_Server\obj\Debug\netcoreapp3.1\SL_Server.csproj.CoreCompileInputs.cache
 C:\G\GithubRepo\Sol_LockStep\SL_Server\obj\Debug\netcoreapp3.1\SL_Server.csproj.CopyComplete
 C:\G\GithubRepo\Sol_LockStep\SL_Server\obj\Debug\netcoreapp3.1\SL_Server.dll
 C:\G\GithubRepo\Sol_LockStep\SL_Server\obj\Debug\netcoreapp3.1\SL_Server.pdb
