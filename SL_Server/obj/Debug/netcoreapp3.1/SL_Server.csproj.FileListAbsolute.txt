@@ -26,3 +26,4 @@ C:\G\GithubRepo\Sol_LockStep\SL_Server\obj\Debug\netcoreapp3.1\SL_Server.csproj.
 C:\G\GithubRepo\Sol_LockStep\SL_Server\obj\Debug\netcoreapp3.1\SL_Server.dll
 C:\G\GithubRepo\Sol_LockStep\SL_Server\obj\Debug\netcoreapp3.1\SL_Server.pdb
 C:\G\GithubRepo\Sol_LockStep\SL_Server\obj\Debug\netcoreapp3.1\SL_Server.genruntimeconfig.cache
+C:\G\GithubRepo\Sol_LockStep\SL_Server\bin\Debug\netcoreapp3.1\Serilog.dll

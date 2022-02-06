@@ -12,17 +12,13 @@ namespace SL_Server.Net
     /// 实现TcpServer的编码器
     /// 发包给客户端的时候调用
     /// </summary>
-    public class TcpServerEncoder : MessageToByteEncoder<TcpMessage>
+    public class TcpServerEncoder : MessageToByteEncoder<NetPackage>
     {
-        protected override void Encode(IChannelHandlerContext context, TcpMessage message, IByteBuffer output)
+        protected override void Encode(IChannelHandlerContext context, NetPackage netPackage, IByteBuffer output)
         {
-            byte[] body = message.message.ToByteArray();
-            //它会自动进行大小端的转换
-            output.WriteInt(body.Length);
-            output.WriteInt(message.protoID);
-            output.WriteBytes(body);
-
-            Console.WriteLine($"{context.Channel.RemoteAddress.ToString()} 发送协议 {message.type} 数据！");
+            output.WriteInt(netPackage.bodyData.Length);
+            output.WriteInt(netPackage.protoID);
+            output.WriteBytes(netPackage.bodyData);
         }
     }
 }

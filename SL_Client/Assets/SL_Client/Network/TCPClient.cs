@@ -7,6 +7,7 @@ using UnityEngine;
 
 /// <summary>
 /// 数据包类型
+/// 这个是本地处理的,不需要上传和序列化
 /// </summary>
 public enum PacketType { 
     /// <summary>

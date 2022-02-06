@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "JWfapcNv/e5qm7IwqlUm5ZIo28mE1Zvf+Ey+kV0h0FEZ/EOQFy5o0YP9XBocaPTNC07wGTIPNJ2y1OrGqc82CQ==",
+  "dgSpecHash": "Ju5HoANsaAk9qQ88L5/0ZzsYq2oN5TCmHQdmN1UDPaMawd4dxx/s4iyvx0Eah1QMVxCE7t0K6+ZFKhMs6F2V8A==",
   "success": true,
   "projectFilePath": "C:\\G\\GithubRepo\\Sol_LockStep\\SL_Server\\SL_Server.csproj",
   "expectedPackageFiles": [
@@ -16,6 +16,9 @@
     "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",
     "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\serilog\\2.10.0\\serilog.2.10.0.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\serilog.sinks.console\\4.0.1\\serilog.sinks.console.4.0.1.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\serilog.sinks.file\\5.0.0\\serilog.sinks.file.5.0.0.nupkg.sha512",
     "C:\\Users\\LENOVO\\.nuget\\packages\\system.collections.immutable\\1.5.0\\system.collections.immutable.1.5.0.nupkg.sha512",
     "C:\\Users\\LENOVO\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.0\\system.diagnostics.diagnosticsource.5.0.0.nupkg.sha512",
     "C:\\Users\\LENOVO\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",

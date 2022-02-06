@@ -39,33 +39,20 @@ namespace SL_Server.Net
                     return;
                 }
 
-                //单包数据长度
-                int msgBodySize = input.ReadInt();
-                //读取包头中ProtoID(opCode)
+                //读取包头中记录包体长度的部分
+                input.ReadInt();
+                //读取包头中记录协议号的部分
                 int protoID = input.ReadInt();
                 //读取包体部分
                 byte[] bodyData = new byte[bodyLength];
                 input.ReadBytes(bodyData);
-
-                //处理包体信息部分
-                if (protoID == (int)LaunchPB.ProtoCode.EHero)
+                // 包装成一个NetPackage对象
+                NetPackage netPackage = new NetPackage()
                 {
-                    //将包体字节流反序列化成PB对象
-                    //调用的是protobuf的
-                    IMessage message = new LaunchPB.Hero();
-
-                    LaunchPB.Hero hero = message.Descriptor.Parser.ParseFrom(bodyData, 0, bodyLength) as LaunchPB.Hero;
-
-                    //将PB对象包装成TcpMessage对象,然后放到output队列中
-                    TcpMessage oneMessage = new TcpMessage()
-                    {
-                        protoID = protoID,
-                        message = message,
-                        type = typeof(LaunchPB.Hero)
-                    };
-
-                    output.Add(oneMessage);
-                }
+                    protoID = protoID,
+                    bodyData = bodyData
+                };
+                output.Add(netPackage);
             }
             catch (Exception e)
             {
